@@ -48,7 +48,7 @@ type UserAccountStatus struct {
 // UserAccount is the Schema for the useraccounts API
 // +k8s:openapi-gen=true
 // +kubebuilder:subresource:status
-// +kubebuilder:resource:scope=namespaced
+// +kubebuilder:resource:scope=Namespaced
 // +kubebuilder:printcolumn:name="User ID",type="string",JSONPath=`.spec.userID`,priority=1
 // +kubebuilder:printcolumn:name="NS Limit",type="string",JSONPath=`.spec.nsLimit`
 // +kubebuilder:printcolumn:name="Tier Name",type="string",JSONPath=`.spec.nsTemplateSet.tierName`

@@ -52,7 +52,7 @@ type NSTemplateSetStatus struct {
 // NSTemplateSet is the Schema for the nstemplatesets API
 // +k8s:openapi-gen=true
 // +kubebuilder:subresource:status
-// +kubebuilder:resource:scope=namespaced
+// +kubebuilder:resource:scope=Namespaced
 // +kubebuilder:printcolumn:name="Tier Name",type="string",JSONPath=`.spec.tierName`
 // +kubebuilder:printcolumn:name="Ready",type="string",JSONPath=`.status.conditions[?(@.type=="Ready")].status`
 // +kubebuilder:printcolumn:name="Reason",type="string",JSONPath=`.status.conditions[?(@.type=="Ready")].reason`

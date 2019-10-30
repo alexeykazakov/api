@@ -61,7 +61,7 @@ type UserSignupStatus struct {
 // UserSignup is the Schema for the usersignup API
 // +k8s:openapi-gen=true
 // +kubebuilder:subresource:status
-// +kubebuilder:resource:scope=namespaced
+// +kubebuilder:resource:scope=Namespaced
 // +kubebuilder:printcolumn:name="User ID",type="string",JSONPath=`.spec.userID`,priority=1
 // +kubebuilder:printcolumn:name="Username",type="string",JSONPath=`.spec.username`,priority=1
 // +kubebuilder:printcolumn:name="TargetCluster",type="string",JSONPath=`.spec.targetCluster`,priority=1
